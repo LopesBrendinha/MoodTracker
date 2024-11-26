@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Droid+Sans:wght@400;700&display=swap');
+body {
+    margin: 0;
+    font-family: 'Ubuntu', 'Droid Sans';
+    background: url(../../assets/imgs/fundo.svg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+  
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.login-box {
+    padding: 75px;
+    width: 300px;
+    text-align:justify;
+}
+  
+.subtitle {
+    font-size: 25px;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    color: #F3F4F8;
+    margin-bottom: 0px;
+    order: -1;
+}
+  
+.input-field {
+    font-family:'Droid Sans';
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    color: #887BA3;
+    background-color: #E6E9ED;
+}
+  
+.password-container {
+    position: relative;
+}
+  
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: block;
+    margin: 10px 0;
+    color: #F3F4F8;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: bold;
+}
+  
+.login-button {
+    display: block;
+    width: 100%;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    background-color: #736490;
+    color: #F3F4F8;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+}
+  
+.login-button:hover {
+    background-color: #7b538f;
+}
+  
