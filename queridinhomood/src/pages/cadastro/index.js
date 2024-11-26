@@ -6,28 +6,25 @@ function Cadastro() {
   return (
     <div className="cadastrar-container">
       <div className="cadastrar-box">
-        <p className="subtitle">Acessar sua conta</p>
+        <p className="subtitle">Cadastrar</p>
         <form>
           <input
             type="email"
-            placeholder="E-mail"
+            placeholder="Insira o E-mail"
             className="input-field"
           />
-          <div className="password-container">
-            <input
-              type="password"
-              placeholder="Senha"
-              className="input-field"
-            />
-            <button type="button" className="toggle-password">
-                <img src={olho} alt="Olho" style={{ width: '20px', height: '20px',}} />
-            </button>
-          </div>
-          <a href="#" className="forgot-password">
-            Esqueci minha senha
-          </a>
+          <input
+            type="password"
+            placeholder="Insira a senha"
+            className="input-field"
+          />
+          <input
+            type="password"
+            placeholder="Confirme a senha"
+            className="input-field"
+          />
           <button type="submit" className="cadastrar-button">
-            Acessar
+            Cadastrar
           </button>
         </form>
       </div>
