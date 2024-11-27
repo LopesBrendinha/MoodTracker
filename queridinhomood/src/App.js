@@ -1,14 +1,13 @@
+// src/index.js
 import React from "react";
-import Login from "./pages/login/index";
-import Cadastro from "./pages/cadastro/index";
+import { createRoot } from "react-dom/client";
+import AppRoutes from "./routes"; // Importa o componente de rotas
 
-function App() {
-  return (
-    <div className="App">
+const container = document.getElementById("root");
+const root = createRoot(container);
 
-      <Cadastro/>
-    </div>
-  );
-}
-
-export default App;
+root.render(
+    <React.StrictMode>
+        <AppRoutes />
+    </React.StrictMode>
+);

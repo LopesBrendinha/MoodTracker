@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Droid+Sans:wght@400;700&display=swap');
-
 body {
     margin: 0;
     font-family: 'Ubuntu', 'Droid Sans';
@@ -9,47 +8,27 @@ body {
     overflow: hidden;
 }
 
-.header {
-    width: 100%;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.edit-button {
-    width: 60px; /* Largura do botão */
-    height: 60px; /* Altura igual à largura para ser redondo */
-    background-color: #6c63ff; /* Cor de fundo roxa */
-    border: none; /* Remove a borda */
-    border-radius: 50%; /* Torna o botão redondo */
-    display: flex; /* Centraliza o conteúdo */
-    justify-content: center;
-    align-items: center;
-}
-
-.perfil-container {
+  
+.esqueceSenha-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-
-.perfil-box {
+  
+.esqueceSenha-box {
     padding: 75px;
     width: 300px;
-    text-align: justify;
+    text-align:justify;
 }
-
-.perfil-box h1 {
+.esqueceSenha-box h1{
     font-size: 15px;
     font-family: 'Ubuntu';
     color: #F3F4F8;
     margin-bottom: 0px;
     order: -1;
 }
-
+  
 .subtitle {
     font-size: 25px;
     font-family: 'Ubuntu';
@@ -58,9 +37,9 @@ body {
     margin-bottom: 0px;
     order: -1;
 }
-
+  
 .input-field {
-    font-family: 'Droid Sans';
+    font-family:'Droid Sans';
     font-size: 20px;
     display: block;
     width: 100%;
@@ -71,3 +50,45 @@ body {
     color: #887BA3;
     background-color: #E6E9ED;
 }
+  
+.password-container {
+    position: relative;
+}
+  
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: block;
+    margin: 10px 0;
+    color: #F3F4F8;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: bold;
+}
+  
+.esqueceSenha-button {
+    display: block;
+    width: 100%;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    background-color: #736490;
+    color: #F3F4F8;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+}
+  
+.esqueceSenha-button:hover {
+    background-color: #7b538f;
+}
+  

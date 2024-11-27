@@ -1,6 +1,7 @@
 import React from "react";
 import olho from "../../assets/imgs/olho.svg"
 import "./index.css";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -23,12 +24,15 @@ function Login() {
                 <img src={olho} alt="Olho" style={{ width: '20px', height: '20px',}} />
             </button>
           </div>
-          <a href="#" className="forgot-password">
+          <Link to ='/esqueceSenha' className="forgot-password">
             Esqueci minha senha
-          </a>
-          <button type="submit" className="login-button">
-            Acessar
-          </button>
+          </Link>
+          <Link to = '/home'>
+            <button type="submit" className="login-button">
+              Acessar
+            </button>
+          </Link>
+          
         </form>
       </div>
     </div>
