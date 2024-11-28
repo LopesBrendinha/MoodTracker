@@ -1,23 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Importando o Link
 import "./index.css";
-import Lapis from "../../assets/imgs/lapis.svg";
+import avatar from "../../assets/imgs/avatar.svg"; 
+import editIcon from "../../assets/imgs/lapis.svg"; 
 
-function perfil() {
+function Perfil() {
   return (
-    <div className="perfil-container">
-        <div className="header"> 
-            <Link to="/edit-profile"> 
-                <button className="edit-button">
-                    <img src= {Lapis}  />  
-                </button> 
-            </Link> 
+    <div className="profile-container">
+      <div className="profile-header">
+        <button className="edit-button">
+          <img src={editIcon} alt="Editar" className="edit-icon" />
+        </button>
+      </div>
+
+      <main className="profile-content">
+        <div className="profile-info">
+          <img src={avatar} alt="Avatar" className="profile-avatar" />
+          <h2 className="profile-name">Lore Ipsum</h2>
         </div>
-        <div className="perfil-box">
-            
+        <div className="profile-card">
         </div>
+      </main>
     </div>
   );
 }
 
-export default perfil;
+export default Perfil;

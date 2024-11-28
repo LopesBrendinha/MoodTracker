@@ -9,7 +9,7 @@ function RoutesApp() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Cadastro/>} />
+                <Route path="/" element={<Perfil/>} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/esqueceSenha" element={<EsqueceSenha />} />
             </Routes>
