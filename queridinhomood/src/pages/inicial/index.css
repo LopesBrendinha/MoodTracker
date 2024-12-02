@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Droid+Sans:wght@400;700&display=swap');
+
+.home-container {
+    font-family: "Ubuntu";
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    height: 100vh; /* Ocupa toda a altura da viewport */
+    background: url(../../assets/imgs/fundo3.svg) no-repeat bottom; /* Define o background */
+    background-color: #e8e4f4;
+    background-size: contain; /* Ajusta a imagem de fundo para caber */
+}
+
+.home-header {
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 20px; /* Adiciona espaçamento ao redor do header (20px em cima e embaixo, 40px nas laterais) */
+    width: 100%; /* Faz o header ocupar toda a largura */
+}
+
+.greeting-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o texto à esquerda */
+}
+
+.greeting-title {
+    font-size: 48px; /* Tamanho grande para o título */
+    font-weight: bold;
+    color: #4D4360; /* Cor especificada */
+    margin: 0; /* Remove margens padrão */
+}
+
+.greeting-subtitle {
+    font-size: 24px; /* Tamanho menor para o subtítulo */
+    font-weight: normal; /* Peso normal para o subtítulo */
+    color: #4D4360; /* Cor especificada */
+    margin-top: 10px; /* Espaçamento entre o título e o subtítulo */
+}
