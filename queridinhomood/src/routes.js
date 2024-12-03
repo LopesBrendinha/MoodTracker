@@ -22,8 +22,9 @@ function RoutesApp() {
                 timeout={300} // Duração da animação
             >
                 <Routes location={location}>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/home" element={<Home />} />
                     <Route path="/emocao" element={<Emocao />} />
+                    <Route path="/" element={<Login />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/esqueceSenha" element={<EsqueceSenha />} />
                     <Route path="/perfil" element={<Perfil />} />

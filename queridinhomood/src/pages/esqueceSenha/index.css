@@ -17,16 +17,17 @@ body {
 }
   
 .esqueceSenha-box {
-    padding: 75px;
+    padding: 20px;
     width: 300px;
     text-align:justify;
 }
 .esqueceSenha-box h1{
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Ubuntu';
     color: #F3F4F8;
     margin-bottom: 0px;
     order: -1;
+    font-weight: normal;
 }
   
 .subtitle {
@@ -70,8 +71,8 @@ body {
     margin: 10px 0;
     color: #F3F4F8;
     text-decoration: underline;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: normal;
 }
   
 .esqueceSenha-button {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Importa o hook useNavigate
+import { Link, useNavigate } from "react-router-dom"; // Importa o hook useNavigate
 import Calendar from "react-calendar"; // Importa o componente de calendário
 import "./index.css";
 import Navigation from "../../components/navigation/navigation"; // Importa o componente de navegação
@@ -42,6 +42,7 @@ function CalendarioScreen() {
                     />
                     <button className="confirm-button" onClick={handleConfirm}>
                         Confirmar
+                        <Link to='/emocao'></Link>
                     </button>
                 </div>
                 <div className="navigation-footer">

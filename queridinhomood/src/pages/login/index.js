@@ -27,6 +27,9 @@ function Login() {
           <Link to ='/esqueceSenha' className="forgot-password">
             Esqueci minha senha
           </Link>
+          <Link to ='/cadastro' className="forgot-password">
+            Criar nova Conta
+          </Link>
           <Link to = '/home'>
             <button type="submit" className="login-button">
               Acessar

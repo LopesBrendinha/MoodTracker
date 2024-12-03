@@ -18,7 +18,7 @@ body {
 }
   
 .login-box {
-    padding: 75px;
+    padding: 20px;
     width: 300px;
     text-align:justify;
 }
@@ -61,10 +61,10 @@ body {
 
 .forgot-password {
     display: block;
-    margin: 10px 0;
+    margin: 10px;
     color: #F3F4F8;
     text-decoration: underline;
-    font-size: 12px;
+    font-size: 30px;
     font-weight: bold;
 }
   

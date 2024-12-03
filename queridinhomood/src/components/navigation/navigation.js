@@ -33,7 +33,7 @@ export default function Navigation() {
 
   // Mapeia as rotas para os ícones e textos
   const routes = [
-    { path: "/", icon: homeIcon, text: "Home" },
+    { path: "/home", icon: homeIcon, text: "Home" },
     { path: "/calendario", icon: calendarIcon, text: "Calendário" },
     { path: "/emocao", icon: smileIcon, text: "Emoji" },
     { path: "/estatisticas", icon: chartIcon, text: "Estatísticas" },
