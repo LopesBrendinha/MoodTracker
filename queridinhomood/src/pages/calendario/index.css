@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Droid+Sans:wght@400;700&display=swap');
+
+.calendar-container {
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #D9DCE1;
+}
+.calendar-header {
+    background-color: #9E93B4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: "Ubuntu";
+    color: #F3F4F8;
+    font-size: 30px;
+}
+
+.calendar-info {
+    margin-top: 40px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-footer {
+    width: 100%; /* Faz a navegação ocupar toda a largura */
+    left: 0;
+    position: absolute; /* Permite que o footer se posicione corretamente */
+    bottom: 0; /* Fixa o footer na parte inferior */
+}
+
+
+/* Estilos gerais para o calendário */
+.custom-calendar {
+    background-color: #D9DCE1; /* Cor de fundo da tela */
+    color: #4D4360; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 20px; /* Borda arredondada para o calendário */
+    padding: 20px; /* Aumenta o espaçamento interno do calendário */
+}
+
+/* Calendário React */
+.react-calendar {
+    width: 100%; /* Faz o calendário ocupar toda a largura */
+    max-width: 600px; /* Largura máxima do calendário */
+    background-color: transparent; /* Remove o fundo branco */
+    border-radius: 20px; /* Garante bordas arredondadas */
+}
+
+/* Estilos para os dias do mês */
+.react-calendar__month-view__days {
+    display: grid; /* Usando grid para organizar os dias */
+    grid-template-columns: repeat(7, 1fr); /* 7 colunas */
+}
+
+.react-calendar__month-view__weekdays {
+    background-color: white;
+    padding: 5px 1px 2px; /* Aumenta o padding inferior para dar mais espaço */
+    border-radius: 20px;
+    display: flex; /* Certifique-se de que o display seja flexível */
+    justify-content: space-between; /* Espaçamento entre os dias da semana */
+    margin-bottom: 20px;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+    display: flex;
+    justify-content: center; /* Centraliza os textos horizontalmente */
+    align-items: flex-end; /* Alinha os textos na parte inferior */
+    font-weight: bold; /* Mantém a fonte em negrito */
+    color: #4D4360; /* Cor dos nomes dos dias da semana */
+    font-family: "Ubuntu"; /* Garante que o tipo de fonte será Ubuntu */
+    font-size: 15px; /* Aumenta o tamanho da fonte dos dias da semana */
+    padding-bottom: 5px; /* Ajuste este valor conforme necessário */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Estilo para o primeiro dia do mês (canto superior esquerdo) */
+.react-calendar__month-view__days__day:first-child {
+    border-top-left-radius: 10px; /* Bordas arredondadas no canto superior esquerdo */
+}
+
+/* Estilo para o último dia da primeira linha (canto superior direito) */
+.react-calendar__month-view__days__day:nth-child(7) {
+    border-top-right-radius: 10px; /* Bordas arredondadas no canto superior direito do último dia da primeira linha */
+}
+
+/* Estilo para o primeiro dia da última linha (canto inferior esquerdo) */
+.react-calendar__month-view__days__day:nth-last-child(7) {
+    border-bottom-left-radius: 10px; /* Bordas arredondadas no canto inferior esquerdo do primeiro dia da última linha */
+}
+
+/* Estilo para o último dia do mês (canto inferior direito) */
+.react-calendar__month-view__days__day:last-child {
+    border-bottom-right-radius: 10px; /* Bordas arredondadas no canto inferior direito do último dia */
+}
+/* Estilo para os dias no calendário - Fonte em negrito (Ubuntu Bold) */
+.react-calendar__month-view__days__day {
+    display: flex;
+    justify-content: flex-end; /* Alinha o número à direita */
+    align-items: flex-end; /* Alinha o número mais para baixo do quadrado */
+ /* Borda arredondada */
+    background-color: #F3F4F8; /* Fundo dos quadrados */
+    color: #4D4360; /* Cor do texto */
+    padding: 15px;
+    padding-bottom: 4px;
+    padding-right: 4px; /* Aumenta o espaçamento interno do quadrado */
+    position: relative;
+    font-size: 23px; /* Aumenta o tamanho da fonte dos números dos dias */
+    font-weight: bold; /* Aplica o negrito (Ubuntu Bold) aos números dos dias */
+}
+
+/* Estilo para os dias fora do mês atual */
+.react-calendar__month-view__days__day--neighboringMonth {
+    opacity: 0.5; /* 50% de opacidade para dias que não são do mês atual */
+}
+
+/* Estilo para os finais de semana (sábados e domingos) */
+.react-calendar__month-view__days__day--weekend {
+    background-color: #9E93B4; /* Cor de fundo para finais de semana */
+    color: white; /* Cor do texto nos finais de semana */
+}
+
+
+/* Estilos para a navegação (meses e setas) */
+.react-calendar__navigation {
+    display: flex;
+    justify-content: center; /* Centraliza o mês e ano */
+    align-items: center;
+
+    margin-bottom: 30px; /* Aumenta o espaçamento abaixo da navegação */
+}
+
+.react-calendar__navigation__label {
+    font-size: 24px; /* Aumenta o tamanho da fonte do mês e ano */
+    color: #4D4360; /* Cor do texto do mês e ano */
+    font-weight: bold; /* Deixa o mês e ano em negrito */
+    margin: 0 10px; /* Adiciona margem nas laterais do mês e ano */
+}
+
+
+/* Estilo para os botões (remover fundo e bordas) */
+button {
+    background-color: transparent; /* Remove fundo */
+    border: none; /* Remove borda */
+    color: #4D4360; /* Cor das letras */
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+}
+.react-calendar__navigation__arrow {
+    font-size: 40px; /* Aumenta o tamanho das setas */
+    color: #4D4360; /* Cor das setas */
+
+}
+
+/* Estilo para o dia selecionado */
+.react-calendar__tile--active {
+    background-color: #4D4360; /* Cor de fundo quando o dia é selecionado */
+    color: white; /* Cor do texto do dia selecionado */
+    border-radius: 5px; /* Manter borda arredondada */
+    font-weight: bold; /* Garantir que o número do dia fique em negrito */
+}
+
+/* Estilo para o dia selecionado quando estiver na navegação de semana */
+.react-calendar__tile--active:focus {
+    outline: none; /* Remove o contorno azul que aparece ao clicar */
+}
+
+/* Estilo específico para o botão confirmar */
+.confirm-button {
+    margin-top: 20px; /* Aumenta o espaçamento acima do botão */
+    padding: 12px 24px; /* Aumenta o espaçamento interno do botão */
+    border-radius: 30px; /* Bordas arredondadas do botão */
+    font-size: 25px; /* Aumenta o tamanho da fonte */
+    color: white; /* Deixa a cor do texto branco */
+    background-color: #4D4360; 
+    font-family: "Ubuntu"; 
+}

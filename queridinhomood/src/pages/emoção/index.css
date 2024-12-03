@@ -9,6 +9,14 @@
     background-color: #e8e4f4;
 }
 
+
+.navigation-footer {
+    width: 100%; /* Faz a navegação ocupar toda a largura */
+    left: 0;
+    position: absolute; /* Permite que o footer se posicione corretamente */
+    bottom: 0; /* Fixa o footer na parte inferior */
+  }
+  
 .mood-header {
     display: flex;
     justify-content: space-between;
@@ -115,19 +123,11 @@
 }
 
 .confirm-button {
-    display: block;
-    width: 40%;
-    height: 7%;
-    margin: 10px auto;
-    padding: 10px;
-    font-family: 'Ubuntu';
-    font-size: 20px;
-    font-weight: bold;
-    color: #F3F4F8;
-    background-color: #736490;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-left: 210px;
+    margin-top: 20px; /* Aumenta o espaçamento acima do botão */
+    padding: 12px 24px; /* Aumenta o espaçamento interno do botão */
+    border-radius: 30px; /* Bordas arredondadas do botão */
+    font-size: 20px; /* Aumenta o tamanho da fonte */
+    color: white; /* Deixa a cor do texto branco */
+    background-color: #4D4360;
+    margin-left: 210px; /* Cor de fundo do botão */
 }
-

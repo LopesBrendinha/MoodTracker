@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import Navigation from "../../components/navigation/navigation"; // Importa o componente de navegação
 import avatar from "../../assets/imgs/avatar.svg"; 
 import editIcon from "../../assets/imgs/lapis.svg"; 
 
@@ -18,6 +19,9 @@ function Perfil() {
           <h2 className="profile-name">Lore Ipsum</h2>
         </div>
         <div className="profile-card">
+        </div>
+        <div className="navigation-footer">
+          <Navigation />
         </div>
       </main>
     </div>

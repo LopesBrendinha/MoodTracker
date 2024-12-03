@@ -9,6 +9,13 @@
     background-color: #e8e4f4;
 }
 
+.navigation-footer {
+    width: 100%; /* Faz a navegação ocupar toda a largura */
+    left: 0;
+    position: absolute; /* Permite que o footer se posicione corretamente */
+    bottom: 0; /* Fixa o footer na parte inferior */
+  }
+  
 .profile-header {
     height: 60px;
     display: flex;
@@ -64,8 +71,6 @@
 .profile-content {
     flex: 1;
     padding: 15px;
-
-
 }
 
 .profile-card {
@@ -74,10 +79,8 @@
     background-color: #E6E9ED;
     border-radius: 15px;
     padding: 20px;
-    width: 320px;
+    width: auto;
     height: 240px;
-
-
 }
 
 .profile-card-text {

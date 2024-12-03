@@ -1,5 +1,7 @@
 import React from "react";
 import "./index.css";
+import Navigation from "../../components/navigation/navigation"; // Importa o componente de navegação
+
 import calendarIcon from "../../assets/imgs/calendario.svg";
 import happyIcon from "../../assets/imgs/feliz.svg";
 import moodIcons from "../../assets/imgs/grupo.svg";
@@ -10,7 +12,6 @@ function MoodScreen() {
             <header className="mood-header">
                 <div className="header-info">
                     <h2 className="header-date">Outubro, 06</h2>
-                    <p className="header-day">Domingo</p>
                 </div>
                 <button className="calendar-button">
                     <img src={calendarIcon} alt="Calendário" className="calendar-icon" />
@@ -32,6 +33,9 @@ function MoodScreen() {
                     placeholder="Comente aqui como você se sente!"
                 ></textarea>
                 <button className="confirm-button">Confirmar</button>
+                <div className="navigation-footer">
+                    <Navigation />
+                </div>
             </main>
         </div>
     );

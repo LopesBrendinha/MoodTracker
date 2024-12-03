@@ -12,6 +12,13 @@
     background-size: contain; /* Ajusta a imagem de fundo para caber */
 }
 
+.navigation-footer {
+    width: 100%; /* Faz a navegação ocupar toda a largura */
+    left: 0;
+    position: absolute; /* Permite que o footer se posicione corretamente */
+    bottom: 0; /* Fixa o footer na parte inferior */
+  }
+
 .home-header {
     text-align: left; /* Alinha o texto à esquerda */
     padding: 20px; /* Adiciona espaçamento ao redor do header (20px em cima e embaixo, 40px nas laterais) */

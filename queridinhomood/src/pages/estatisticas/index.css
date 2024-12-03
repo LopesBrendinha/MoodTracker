@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Droid+Sans:wght@400;700&display=swap');
+
+.stats{
+    background-color: #F3F4F8;
+}
+.stats-container {
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    padding: 20px;
+}
+.stats-header {
+    background-color: #9E93B4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: "Ubuntu";
+    color: #F3F4F8;
+    font-size: 30px;
+}
+
+.stats-info {
+    margin-top: 40px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-footer {
+    width: 100%; /* Faz a navegação ocupar toda a largura */
+    left: 0;
+    position: absolute; /* Permite que o footer se posicione corretamente */
+    bottom: 0; /* Fixa o footer na parte inferior */
+}
+.stats-image {
+    width: auto; /* ajuste o tamanho da imagem */
+    height: auto; /* ajuste o tamanho da imagem */ /* ajuste o espaçamento */
+    border-radius: 10px; /* ajuste o raio da borda */
+}
+
+.subtitle {
+    font-size: 30px; /* Tamanho menor para o subtítulo */
+    font-weight: normal; /* Peso normal para o subtítulo */
+    color: #4D4360; /* Cor especificada */
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Espaçamento entre o título e o subtítulo */
+}
