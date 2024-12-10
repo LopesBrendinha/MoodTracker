@@ -7,33 +7,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .navigation-footer {
-  width: 100%; /* Faz a navegação ocupar toda a largura */
+  width: 100%;
   left: 0;
-  position: absolute; /* Permite que o footer se posicione corretamente */
-  bottom: 0; /* Fixa o footer na parte inferior */
+  position: absolute;
+  bottom: 0;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* animations.css */
-
 .page-enter {
   opacity: 0;
-  transform: translateY(20px); /* Inicia um pouco abaixo */
+  transform: translateY(20px);
 }
-
 .page-enter-active {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 300ms, transform 300ms; /* Tempo da transição */
+  transition: opacity 300ms, transform 300ms;
 }
-
 .page-exit {
   opacity: 1;
 }
-
 .page-exit-active {
   opacity: 0;
-  transition: opacity 300ms; /* Tempo da transição */
+  transition: opacity 300ms;
 }

@@ -10,7 +10,7 @@ import "./navigation.css";
 function ListItem({ icon, text, onClick, isSelected }) {
   return (
     <li
-      className={`list ${isSelected ? "active" : ""}`} // Usando a classe 'active' se o item estiver selecionado
+      className={`list ${isSelected ? "active" : ""}`} 
       data-list-item={text}
       onClick={onClick}
     >
@@ -28,10 +28,10 @@ export default function Navigation() {
   const location = useLocation();
 
   const handleClick = (path) => {
-    navigate(path); // Navega para a rota especificada
+    navigate(path);
   };
 
-  // Mapeia as rotas para os ícones e textos
+
   const routes = [
     { path: "/home", icon: homeIcon, text: "Home" },
     { path: "/calendario", icon: calendarIcon, text: "Calendário" },
@@ -48,8 +48,8 @@ export default function Navigation() {
             key={text}
             icon={icon}
             text={text}
-            onClick={() => handleClick(path)} // Passa a rota para o handleClick
-            isSelected={location.pathname === path} // Verifica se a rota atual é a mesma do item
+            onClick={() => handleClick(path)} 
+            isSelected={location.pathname === path} 
           />
         ))}
         <div className="indicator"></div>

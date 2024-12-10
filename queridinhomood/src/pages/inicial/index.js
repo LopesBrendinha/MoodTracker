@@ -1,6 +1,6 @@
 import React from "react";
-import Navigation from "../../components/navigation/navigation"; // Importa o componente de navegação
-import "./index.css"; // Caso precise de estilos específicos para a tela inicial
+import Navigation from "../../components/navigation/navigation"; 
+import "./index.css";
 
 function HomeScreen() {
   return (

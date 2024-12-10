@@ -1,9 +1,9 @@
 import React from "react";
-import { createRoot } from "react-dom/client"; // Importa createRoot
-import Routes from "./routes"; // Importa o seu componente de rotas
+import { createRoot } from "react-dom/client"; 
+import Routes from "./routes";
 
-const container = document.getElementById("root"); // Seleciona o elemento root
-const root = createRoot(container); // Cria a raiz
+const container = document.getElementById("root"); 
+const root = createRoot(container); 
 
 root.render(
     <React.StrictMode>

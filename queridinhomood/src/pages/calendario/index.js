@@ -1,25 +1,19 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom"; // Importa o hook useNavigate
-import Calendar from "react-calendar"; // Importa o componente de calendário
+import { Link } from "react-router-dom";
+import Calendar from "react-calendar";
 import "./index.css";
-import Navigation from "../../components/navigation/navigation"; // Importa o componente de navegação
+import Navigation from "../../components/navigation/navigation";
 
 function CalendarioScreen() {
-    const [date, setDate] = useState(new Date()); // Estado para armazenar a data selecionada
-    const navigate = useNavigate(); // Inicializa o hook useNavigate
+    const [date, setDate] = useState(new Date());
 
     const handleDateChange = (newDate) => {
-        setDate(newDate); // Atualiza a data selecionada
+        setDate(newDate);
     };
 
-    const handleConfirm = () => {
-        navigate("/emocao"); // Redireciona para a página de emoção
-    };
-
-    // Função para formatar os dias da semana
     const formatShortWeekday = (locale, date) => {
-        const weekdays = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S']; // Abreviações desejadas
-        return weekdays[date.getDay()]; // Retorna a abreviação correspondente ao dia
+        const weekdays = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'];
+        return weekdays[date.getDay()];
     };
 
     return (
@@ -31,19 +25,20 @@ function CalendarioScreen() {
             <main>
                 <div className="calendar-container">
                     <Calendar
-                        onChange={handleDateChange} // Função chamada ao selecionar uma data
-                        value={date} // Valor do calendário
-                        className="custom-calendar" // Classe personalizada para estilização
-                        locale="pt-BR" // Define o idioma e semana começando no domingo
-                        formatShortWeekday={formatShortWeekday} // Adiciona a função de formatação dos dias da semana 
-                        next2Label={null} // Remove a seta de navegação para o ano seguinte
-                        prev2Label={null} // Define o símbolo para o botão de mês anterior
-                        view="month" // Força a visualização mensal
+                        onChange={handleDateChange}
+                        value={date}
+                        className="custom-calendar"
+                        locale="pt-BR"
+                        formatShortWeekday={formatShortWeekday}
+                        next2Label={null}
+                        prev2Label={null}
+                        view="month"
                     />
-                    <button className="confirm-button" onClick={handleConfirm}>
-                        Confirmar
-                        <Link to='/emocao'></Link>
-                    </button>
+                    <Link to='/emocao'>
+                        <button className="confirm-button">
+                            Confirmar
+                        </button>
+                    </Link>
                 </div>
                 <div className="navigation-footer">
                     <Navigation />

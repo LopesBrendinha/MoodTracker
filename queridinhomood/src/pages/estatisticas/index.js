@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
-import Navigation from "../../components/navigation/navigation"; // Importa o componente de navegação
-import myImage from "../../assets/imgs/stats.svg"; // Substitua pelo nome correto da sua imagem
+import Navigation from "../../components/navigation/navigation"; 
+import myImage from "../../assets/imgs/stats.svg"; 
 
 function EstatisticaScreen() {
     return (
